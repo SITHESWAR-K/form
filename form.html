@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<center>
+<body>
+    <form onsubmit="sumit(event)">
+        <table border="1">
+            <tr>
+                <th>NAME</th>
+                <td><input type="text" name="name" id="name" required></td>
+            </tr>
+            <tr>
+                <th>AGE</th>
+                <td><input type="number" name="age" id="age" required></td>
+            </tr>
+            <tr>
+                <th>GENDER</th>
+                <td>
+                    <input type="radio" name="gender" id = "gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>COURSE</th>
+                <td>
+                    <select name="COURSE" id="COURSE" style="width: 100%;">
+                        <option value="PYTHON">PYTHON</option>
+                        <option value="JAVA">JAVA</option>
+                        <option value="JAVASCRIPT">JAVASCRIPT</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>E-MAIL</th>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button style="width:100%" type="submit">Click Me</button>
+                </td>
+        </table>
+    </form>
+    <table id="rows" border="1" style="margin-top: 10px;">
+        <tr >
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>COURSE</th>
+            <th>GENDER</th>
+            <th>EMAIL</th>
+            <th>ACTION</th>
+        </tr>
+    </table>
+    <script src="form.js"></script>
+</body>
+</center>
+</html>
